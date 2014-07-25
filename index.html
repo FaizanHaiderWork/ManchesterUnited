@@ -1,0 +1,277 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Mobile Web App</title>
+<link href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="http://code.jquery.com/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="format.css">
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1>Manchester United</h1>
+	</div>
+	<div data-role="content" data-theme="a">
+    <img src="http://icons.iconarchive.com/icons/giannis-zographos/english-football-club/128/Manchester-United-icon.png">
+    <p></p>	
+		<ul data-role="listview" data-theme="a">
+            <li><a href="#matchreport">Match Report</a></li>
+			<li><a href="#games">Fixture</a></li>
+            <li><a href="#history">History</a></li>
+			<li><a href="#contact">Contact MUFC</a></li>
+            <li><a href="#aboutme">Developer</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4>est 1878</h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="matchreport">
+<div data-role="header">
+		<h1>Match Report</h1>
+	</div>
+    <div data-role="content">
+   <div>
+   		<ul style="left=auto; right=auto">
+        	<li style="display:inline-block; color:red; font-size: 20px">Manchester United</li>
+        	<li style="display:inline-block; background-color: black; color: white; font-size:20px">7-0</li>
+            <li style="display:inline-block; color:blue; font-size: 20px">LA Galaxy</li>
+            </ul>
+            <ul style="list-style-type: none; font-size:10px; color:red">
+            	<li>D Welback ('13)</li>
+                <li>W Rooney (PEN '43, '45+1)</li>
+                <li>R James ('62, '84)</li>
+                <li>A Young ('88, '90)</li>
+                </ul>
+   </div>
+    <div>
+		<table align="center" id="table" style="border-collapse:collapse;">
+            <thead>
+                <tr>
+                    <th colspan="2">Stats</th>
+                </tr>
+                <tr style="border-bottom:1px solid black;">
+                    <th style="padding:5px;"><em>Catagory</em></th>
+                    <th style="padding:5px;border-left:1px solid black;"><em>MUFC-LAG</em></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding:5px;">Possesion</td>
+                    <td style="padding:5px;border-left:1px solid black;">0-0</td>     
+                </tr>
+                
+                <tr>
+                    <td style="padding:5px;">Shots</td>
+                    <td style="padding:5px;border-left:1px solid black;">0-0</td>
+                </tr>
+                
+                <tr>
+                    <td style="padding:5px;">Shots on Target</td>
+                    <td style="padding:5px;border-left:1px solid black;">0-0</td>
+                </tr>
+                <tr>
+                    <td style="padding:5px;">Yellow Cards</td>
+                    <td style="padding:5px;border-left:1px solid black;">0-0</td>
+                </tr>
+                <tr>
+                    <td style="padding:5px;">Red Cards</td>
+                    <td style="padding:5px;border-left:1px solid black;">0-0</td>
+                </tr>
+                
+            </tbody>
+        </table>
+        <p>Man of The Match was Ander Herrera who played the full 90 minutes and assisted three goals.</p>
+        <p></p>
+       <div data-role="footer" data-theme="a">
+	<h4>est 1878 <a style="float:right; text-decoration:none; color:red" href="#page">Back</a></h4>
+	</div>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="games">
+<div data-role="header">
+		<h1>Match Fixture 2014/15</h1>
+	</div>
+	<div data-role="content" style="background-color: white;">
+    <div id="month">
+    <h3 style="color: #FF0105; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">Matches in August</h3>
+</div>	
+		<table>
+        	<tr>
+            	<td style="padding-right:5px;"> 16 Aug</td>
+                <td style="padding-left:5px;padding-right:95px;"> vs Swansea City</td>
+                <td style="padding-right:20px"> H</td>
+                <td style="padding-right:5px;"> 12:45</td>
+          </tr>
+            <tr>
+            	<td style="padding-right:5px;"> 24 Aug</td>
+                <td style="padding-left:5px;padding-right:60px;"> vs Sunderland</td>
+                <td> A</td>
+                <td style="padding-right:5px;"> 16:00</td>
+          </tr>
+            <tr>
+           	  <td style="padding-right:5px;"> 30 Aug</td>
+                <td style="padding-left:5px;padding-right:40px;"> vs Burnley</td>
+                <td> A</td>
+              <td> 12:45</td>
+          </tr>
+</table>
+
+<div id="month">
+    <h3 style="color: #FF0105; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">Matches in September</h3>
+</div>	
+		<table>
+        	<tr>
+            	<td style="padding-right:5px;"> 14 Sep</td>
+                <td style="padding-left:5px;padding-right:35px;"> vs Queens Park Rangers</td>
+                <td> H</td>
+                <td style="padding-left:20px"> 16:00</td>
+          </tr>
+            <tr>
+            	<td style="padding-right:5px;"> 21 Sep</td>
+                <td style="padding-left:5px;padding-right:40px;"> vs Leicester City</td>
+                <td> A</td>
+                <td style="padding-left:20px"> 13:30</td>
+          </tr>
+            <tr>
+           	  <td style="padding-right:5px;"> 27 Sep</td>
+                <td style="padding-left:5px;padding-right:40px;"> vs West Ham United</td>
+                <td> H</td>
+              <td style="padding-left:20px"> 15:00</td>
+          </tr>
+</table>
+     
+     <div id="month">
+    <h3 style="color: #FF0105; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">Matches in October</h3>
+</div>	
+		<table>
+        	<tr>
+            	<td style="padding-right:5px;"> 05 Oct</td>
+                <td style="padding-left:5px;padding-right:40px;"> vs Everton</td>
+                <td style="padding-left: 80px"> H</td>
+                <td style="padding-left:20px"> 12:00</td>
+          </tr>
+            <tr>
+            	<td style="padding-right:5px;"> 20 Oct</td>
+                <td style="padding-left:5px;padding-right:40px;"> vs West Brom</td>
+                <td style="padding-left:80px"> A</td>
+                <td style="padding-left: 20px"> 20:00</td>
+          </tr>
+            <tr>
+           	  <td style="padding-right:5px;"> 26 Oct</td>
+                <td style="padding-left:5px;padding-right:40px;"> vs Chelsea</td>
+                <td style="padding-left: 80px"> H</td>
+              <td style="padding-left:20px"> 16:00</td>
+          </tr>
+</table>  
+
+<div id="month">
+    <h3 style="color: #FF0105; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">Matches in Nobember</h3>
+</div>	
+		<table>
+        	<tr>
+            	<td style="padding-right:5px;"> 16 Nov</td>
+                <td style="padding-left:5px;padding-right:40px;"> vs Manchester City</td>
+                <td style="padding-left:40px"> A</td>
+                <td style="padding-left:20px"> 13:30</td>
+          </tr>
+            <tr>
+            	<td style="padding-right:5px;"> 24 Nov</td>
+                <td style="padding-left:5px;padding-right:40px;"> vs Crystal Palace</td>
+                <td style="padding-left:40px"> H</td>
+                <td style="padding-left:20px"> 15:00</td>
+          </tr>
+            <tr>
+           	  <td style="padding-right:5px;"> 30 Nov</td>
+                <td style="padding-left:5px;padding-right:40px;"> vs Arsenal</td>
+                <td style="padding-left:40px"> A</td>
+              <td style="padding-left:20px"> 17:30</td>
+          </tr>
+</table>     
+            
+            	
+	</div>
+<div data-role="footer" data-theme="a">
+	<h4>est 1878 <a style="float:right; text-decoration:none; color:red" href="#page">Back</a></h4>
+    
+	</div>
+</div>
+
+<div data-role="page" id="history">
+	<div data-role="header">
+		<h1 style="font-family:Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', serif; width:auto">A History</h1>
+	</div>
+	<div data-role="content">
+    <div style="font-family:Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', serif; height:auto; width:auto">	
+		<p>Manchester United Football Club is an English professional football club, based in the Greater Manchester Area, that plays in the Barclays English Premier League. Originally founded as Newton Heath LYR Football Club in 1878, the club changed its name to Manchester United in 1902 and moved to the Old Trafford stadium in 1910.</p>
+<p>In 1968, under the management of Matt Busby, Manchester United was the first English football club to win the European Cup, ten years after the Munich air disaster that claimed the lives of eight players. The current manager, Sir Alex Ferguson, is the most successful manager in English football history, having won 37 major honours since he took over in November 1986.</p>
+<p>Manchester United is the most successful club in English football, having won 53 domestic trophies, comprising a record 19 league titles, a record 11 FA Cups[5], four League Cups and 19 FA Charity/Community Shields. The club has also been successful globally, winning seven international titles: three European Cups, one UEFA Cup Winners' Cup, one UEFA Super Cup, one Intercontinental Cup and one FIFA Club World Cup. In 1998-99, the club won a "Treble" of the Premier League, the FA Cup and the UEFA Champions League, an unprecedented feat for an English club.</p>
+<p>Manchester United is one of the wealthiest and most widely supported football teams in the world. The club is said to be worth 1.13 billion pounds, making it the world's most valuable football club. After being floated on the London Stock Exchange in 1991, the club was purchased by Malcolm Glazer in May 2005 in a deal valuing the club at almost 800 million pounds.
+</p>
+</div> 		
+	</div>
+	<div data-role="footer">
+		<h4>est 1878 <a style="float:right; text-decoration:none; color:red" href="#page">Back</a></h4>
+	</div>
+</div>
+
+<div data-role="page" id="contact">
+	<div data-role="header">
+		<h1>Contact MUFC</h1>
+	</div>
+	<div data-role="content">	
+		<div>
+        <table>
+        	<td style="padding-bottom:5px">Department</td>
+            <td>Phone</td>
+            <td>Email</td>	
+            <tr>
+            	<td>Tickets</td>
+             	<td>+44 (0) 161 868 8000</td>
+                <td>tickets@manutd.co.uk</td>
+                </tr>
+            <tr>
+            	<td style="padding-bottom:5px">Tours</td>
+                <td>+44 (0) 161 868 8000</td>
+                <td>toursenquiry@manutd.co.uk</td>
+            	</tr>
+            <tr>
+            	<td style="padding-bottom:5px">Membership</td>
+                <td>+44 (0) 161 868 8000</td>
+                <td>membership@manutd.co.uk</td>
+                </tr>
+             <tr>
+             	<td>Store</td>
+                <td>+44 (0) 161 868 8567</td>
+                <td>shop@store.manutd.com</td>
+                </tr>	
+          </table>
+        </div>
+        <p><a href="http://www.manutd.com" style="text-decoration:none;">Offical Website</a></p>
+	</div>
+	<div data-role="footer">
+		<h4>est 1878 <a style="float:right; text-decoration:none; color:red" href="#page">Back</a></h4>
+	</div>
+</div>
+
+<div data-role="page" id="aboutme">
+<div data-role="header">
+    	<h1>About me</h1>
+    </div>
+<div data-role="content">
+    	<p style="font-family:Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', serif">My name is Faizan Haider. I live in Canada and a huge fan of Manchester United.</p>
+        <p style="font-family:Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', serif">This app is coded in HTML, CSS, and JavaScript using Adobe Dreamweaver CC 2014, PhoneGap, and Github. I am also fluent in C++, HTML, and Java along with knowing the basics of JavaScript, PHP and Ruby. </p>
+        <p style="font-family:Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', serif">You can contact me via email at faizanhaider12@gmail.com</p>
+        <div data-role="footer">
+		<h4>est 1878 <a style="float:right; text-decoration:none; color:red" href="#page">Back</a></h4>
+	</div>
+        </div>
+</body>
+</html>
